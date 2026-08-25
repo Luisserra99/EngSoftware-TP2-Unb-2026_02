@@ -1,0 +1,70 @@
+# File for suppressing errors found in pid 34943: "teste_memoria"
+
+# Suppression for Error #1
+UNINITIALIZED READ
+name=Error #1 (update to meaningful name)
+libc.so.6!__printf_buffer
+libc.so.6!__vfprintf_internal
+libc.so.6!__printf
+teste_memoria!main
+
+## Mod+offs-style suppression for Error #1:
+UNINITIALIZED READ
+name=Error #1 (update to meaningful name)
+<libc.so.6+0x6a0c8>
+<libc.so.6+0x6b73b>
+<libc.so.6+0x601b3>
+<teste_memoria+0x134d>
+
+# Suppression for Error #2
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+teste_memoria!estouro_de_buffer
+teste_memoria!main
+
+## Mod+offs-style suppression for Error #2:
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+<teste_memoria+0x1238>
+<teste_memoria+0x1352>
+
+# Suppression for Error #3
+UNADDRESSABLE ACCESS
+name=Error #3 (update to meaningful name)
+teste_memoria!uso_apos_free
+teste_memoria!main
+
+## Mod+offs-style suppression for Error #3:
+UNADDRESSABLE ACCESS
+name=Error #3 (update to meaningful name)
+<teste_memoria+0x127e>
+<teste_memoria+0x1357>
+
+# Suppression for Error #4
+INVALID HEAP ARGUMENT
+name=Error #4 (update to meaningful name)
+libdrmemorylib.so!replace_free
+teste_memoria!liberacao_dupla
+teste_memoria!main
+
+## Mod+offs-style suppression for Error #4:
+INVALID HEAP ARGUMENT
+name=Error #4 (update to meaningful name)
+<libdrmemorylib.so+0x4ae30>
+<teste_memoria+0x12cb>
+<teste_memoria+0x135c>
+
+# Suppression for Error #5
+LEAK
+name=Error #5 (update to meaningful name)
+libdrmemorylib.so!replace_malloc
+teste_memoria!vazamento
+teste_memoria!main
+
+## Mod+offs-style suppression for Error #5:
+LEAK
+name=Error #5 (update to meaningful name)
+<libdrmemorylib.so+0x4b3c0>
+<teste_memoria+0x12e4>
+<teste_memoria+0x1361>
+

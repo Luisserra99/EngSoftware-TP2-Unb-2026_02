@@ -1,0 +1,58 @@
+~~Dr.M~~ Dr. Memory version 2.6.20434
+~~Dr.M~~ WARNING: Unable to write to the disk.  Ensure that you have enough space and permissions.
+~~Dr.M~~ 
+~~Dr.M~~ Error #1: UNINITIALIZED READ: reading register r12
+~~Dr.M~~ # 0 libc.so.6!__printf_buffer         [./stdio-common/vfprintf-process-arg.c:58]
+~~Dr.M~~ # 1 libc.so.6!__vfprintf_internal     [./stdio-common/vfprintf-internal.c:1544]
+~~Dr.M~~ # 2 libc.so.6!__printf                [./stdio-common/printf.c:33]
+~~Dr.M~~ # 3 main                              [teste_memoria.c:48]
+~~Dr.M~~ Note: @0:00:00.871 in thread 34943
+~~Dr.M~~ Note: instruction: test   %r12 %r12
+~~Dr.M~~ 
+~~Dr.M~~ Error #2: UNADDRESSABLE ACCESS beyond heap bounds: writing 0x000079201b2011f8-0x000079201b2011f9 1 byte(s)
+~~Dr.M~~ # 0 estouro_de_buffer               [teste_memoria.c:21]
+~~Dr.M~~ # 1 main                            [teste_memoria.c:49]
+~~Dr.M~~ Note: @0:00:00.896 in thread 34943
+~~Dr.M~~ Note: refers to 0 byte(s) beyond last valid byte in prior malloc
+~~Dr.M~~ Note: prev lower malloc:  0x000079201b2011f0-0x000079201b2011f8
+~~Dr.M~~ Note: instruction: mov    $0x00 -> (%rax)
+~~Dr.M~~ 
+~~Dr.M~~ Error #3: UNADDRESSABLE ACCESS of freed memory: reading 0x000079201b201220-0x000079201b201224 4 byte(s)
+~~Dr.M~~ # 0 uso_apos_free               [teste_memoria.c:30]
+~~Dr.M~~ # 1 main                        [teste_memoria.c:50]
+~~Dr.M~~ Note: @0:00:00.897 in thread 34943
+~~Dr.M~~ Note: 0x000079201b201220-0x000079201b201224 overlaps memory 0x000079201b201220-0x000079201b201224 that was freed here:
+~~Dr.M~~ Note: # 0 replace_free                [/home/runner/work/drmemory/drmemory/common/alloc_replace.c:2712]
+~~Dr.M~~ Note: # 1 uso_apos_free               [teste_memoria.c:29]
+~~Dr.M~~ Note: # 2 main                        [teste_memoria.c:50]
+~~Dr.M~~ Note: instruction: mov    (%rax) -> %eax
+~~Dr.M~~ 
+~~Dr.M~~ Error #4: INVALID HEAP ARGUMENT to free 0x000079201b201250
+~~Dr.M~~ # 0 replace_free                  [/home/runner/work/drmemory/drmemory/common/alloc_replace.c:2712]
+~~Dr.M~~ # 1 liberacao_dupla               [teste_memoria.c:37]
+~~Dr.M~~ # 2 main                          [teste_memoria.c:51]
+~~Dr.M~~ Note: @0:00:00.904 in thread 34943
+~~Dr.M~~ Note: memory was previously freed here:
+~~Dr.M~~ Note: # 0 replace_free                  [/home/runner/work/drmemory/drmemory/common/alloc_replace.c:2712]
+~~Dr.M~~ Note: # 1 liberacao_dupla               [teste_memoria.c:36]
+~~Dr.M~~ Note: # 2 main                          [teste_memoria.c:51]
+resultado: 1
+valor lido apos free: 0
+fim do programa
+~~Dr.M~~ 
+~~Dr.M~~ Error #5: LEAK 64 direct bytes 0x000079201b201280-0x000079201b2012c0 + 0 indirect bytes
+~~Dr.M~~ # 0 replace_malloc               [/home/runner/work/drmemory/drmemory/common/alloc_replace.c:2582]
+~~Dr.M~~ # 1 vazamento                    [teste_memoria.c:42]
+~~Dr.M~~ # 2 main                         [teste_memoria.c:52]
+~~Dr.M~~ 
+~~Dr.M~~ ERRORS FOUND:
+~~Dr.M~~       2 unique,     2 total unaddressable access(es)
+~~Dr.M~~       1 unique,     1 total uninitialized access(es)
+~~Dr.M~~       1 unique,     1 total invalid heap argument(s)
+~~Dr.M~~       0 unique,     0 total warning(s)
+~~Dr.M~~       1 unique,     1 total,     64 byte(s) of leak(s)
+~~Dr.M~~       0 unique,     0 total,      0 byte(s) of possible leak(s)
+~~Dr.M~~ ERRORS IGNORED:
+~~Dr.M~~       1 unique,     1 total,   4096 byte(s) of still-reachable allocation(s)
+~~Dr.M~~          (re-run with "-show_reachable" for details)
+~~Dr.M~~ Details: drmemory_logs/DrMemory-teste_memoria.34943.000/results.txt

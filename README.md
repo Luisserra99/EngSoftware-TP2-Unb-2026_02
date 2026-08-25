@@ -1,2 +1,6 @@
-# Topicos-avancados-Exploracao-de-Sistemas-Computacionais
-CIC0087 - TOPICOS AVANCADOS EM COMPUTADORES - Turma 04 - 2026/2
+# TRepostório apra exercícios e testes das diciplinas
+Engenharia de Software
+
+Software Básico
+
+Técnicas de Programação 2
