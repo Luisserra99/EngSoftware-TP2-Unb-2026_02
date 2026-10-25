@@ -3,7 +3,8 @@
 Guia único montado a partir das três provas resolvidas, com as respostas **reconciliadas contra os slides**. Para ver o enunciado completo e o comentário longo de uma questão, abra o guia individual:
 
 - [01-ProvaSB_teoria-resolvida.md](01-ProvaSB_teoria-resolvida.md): prova de outro aluno (aqui chamada **P1**).
-- [02-SB_Prova_Sistemas-EU-resolvida.md](02-SB_Prova_Sistemas-EU-resolvida.md): Prova-T 21/2 com **as suas respostas** (aqui **PT**; seus erros estão na seção 5).
+- [02-SB_Prova_Sistemas-EU-resolvida.md](02-SB_Prova_Sistemas-EU-resolvida.md): Prova-T 21/2 respondida por um colega (aqui **PT**; os erros dessa resolução estão na seção 5).
+- [04-TEORIA-SB.md](04-TEORIA-SB.md): teoria completa dos slides, para resolver variantes inéditas.
 - [03-SB_Prova_Sistemas-resolvida.md](03-SB_Prova_Sistemas-resolvida.md): a mesma Prova-T 21/2, respondida por outro aluno (mesma numeração **PT**).
 
 Nenhuma resposta aqui é gabarito oficial. Quando há dúvida, a seção 8 diz o grau de confiança.
@@ -28,14 +29,14 @@ Nenhuma resposta aqui é gabarito oficial. Quando há dúvida, a seção 8 diz o
 
 **Estratégia:** domine os 22 itens (seção 3) e as suas versões "viradas", e decore as 4 respostas-modelo (seção 4). Na prova, procure a palavra trocada antes de qualquer outra coisa.
 
-**Ordem de leitura sugerida:** seção 2 (o que priorizar), seção 3 (banco), seção 4 (discursivas), seção 5 (seus erros). Na véspera, só a seção 7. A seção 8 serve para decidir os itens duvidosos.
+**Ordem de leitura sugerida:** seção 2 (o que priorizar), seção 3 (banco), seção 4 (discursivas), seção 5 (erros comuns). Na véspera, só a seção 7. A seção 8 serve para decidir os itens duvidosos.
 
 ### Regras da prova (cabeçalho da Prova-T 21/2)
 
 - Preencher **V**, **F** ou **NS** (não sei). Parte 1 vale 7,0 (22 × 0,32); Parte 2 vale 1,0 + 1,0 + 1,0 + 2,0.
 - **Duas erradas anulam uma certa**, ou seja, cada erro custa −0,16. **Em branco conta como errada** (−0,16). NS vale 0.
 - **Justificar todo item marcado F.** Um F sem justificativa corre o risco de não ser aceito.
-- Uma marcação só por item. "F/NS" (como na sua Q6) é inválida e tende a contar como erro.
+- Uma marcação só por item. "F/NS" (como na Q6 da PT "EU") é inválida e tende a contar como erro.
 - "Mantenha o formato de tabela": não mude o layout.
 
 ### Quando vale marcar NS
@@ -92,7 +93,7 @@ Pontos por bloco (por prova): von Neumann ≈ 1,28 + 1,0; carregadores ≈ 1,28 
 
 **Evidência de que é o padrão do professor:** o item do carregador de relocação (P1-Q14 / PT-Q7) também é incompleto ("lê o tamanho do programa", e o slide 7-2 s49 diz "lê o tamanho **e o entrypoint**"), e os três guias e os dois alunos marcaram V. O montador (P1-Q8 / PT-Q22) omite a "função básica" do slide 17 e é V. Ou seja: **omitir um detalhe não torna falso; tirar um elemento de uma lista definidora, sim.**
 
-**Ressalva honesta:** dois alunos da PT (você e o outro) marcaram F na Q14, e não há gabarito. A confiança no V é **média** (cerca de 65%). Mesmo assim, V tem valor esperado maior: com 65% de chance, V vale +0,15 e F vale +0,01.
+**Ressalva honesta:** os dois alunos da PT marcaram F na Q14, e não há gabarito. A confiança no V é **média** (cerca de 65%). Mesmo assim, V tem valor esperado maior: com 65% de chance, V vale +0,15 e F vale +0,01.
 
 **O que fazer na prova:**
 1. Enumeração fechada com item faltando: **F**, e a justificativa cita o item que falta.
@@ -106,7 +107,7 @@ Pontos por bloco (por prova): von Neumann ≈ 1,28 + 1,0; carregadores ≈ 1,28 
 **(a) Componentes** – P1-Q1, PT-Q1 → **F**
 - Variação vista: "caracterizada por CPU (ULA, UC, registradores, PC), memória (RAM...) e periféricos". As duas provas têm o mesmo texto.
 - **Justificativa:** "Faltam os **barramentos** (dados, endereço e controle). Além disso, a memória não é necessariamente RAM (o boot está em ROM)."
-- Pegadinha: lista do slide com um item a menos. A sua justificativa na PT estava perfeita. Evite a do aluno de P1 ("a RAM não necessariamente será a memória usada"), que pega só o detalhe secundário.
+- Pegadinha: lista do slide com um item a menos. A justificativa da PT "EU" estava perfeita. Evite a do aluno de P1 ("a RAM não necessariamente será a memória usada"), que pega só o detalhe secundário.
 - Decore: **4 componentes** (CPU, memória, E/S, barramentos); CPU = ULA, UC, registradores, PC; **3 barramentos** (dados, endereço, controle).
 
 **(b) Ciclo e entry point** – P1-Q2, PT-Q14 → **V** (confiança média; ver 3.0)
@@ -145,7 +146,7 @@ Pontos por bloco (por prova): von Neumann ≈ 1,28 + 1,0; carregadores ≈ 1,28 
 - Item: "As otimizações **algorítmicas** de código que podem ser realizadas na síntese são de tempo de execução ou de alocação de memória."
 - Fonte: 7-1 s31: "Otimiza o código intermediário... **A otimização é do código e não das funções implementadas ao nível do código do programador**."
 - **Justificativa:** "A síntese otimiza o **código intermediário**; não faz otimização algorítmica (das funções do programador)."
-- Os três guias concordam em F. Os dois alunos de fora marcaram V; você marcou "F/NS" com justificativa contrária ao slide.
+- Os três guias concordam em F. Os alunos das versões P1 e PT marcaram V; a PT "EU" marcou "F/NS" com justificativa contrária ao slide.
 
 ---
 
@@ -170,13 +171,13 @@ Pontos por bloco (por prova): von Neumann ≈ 1,28 + 1,0; carregadores ≈ 1,28 
 ### 3.4 Código absoluto, relocação, carregadores e boot (7-1 s13–s16, 7-2 s38, s49, 9 s6)
 
 **(a) Código absoluto "não é mais usado"** – P1-Q5, PT-Q8 → **F**
-- **Justificativa:** "Código absoluto ainda é usado no boot: ROM BIOS (FFFF:0000) e carregador absoluto (7-1 s13, s15)." A sua ("dependendo do sistema, ainda pode ser utilizado") está certa, mas genérica: cite o boot.
+- **Justificativa:** "Código absoluto ainda é usado no boot: ROM BIOS (FFFF:0000) e carregador absoluto (7-1 s13, s15)." A da PT "EU" ("dependendo do sistema, ainda pode ser utilizado") está certa, mas genérica: cite o boot.
 
 **(b) Código relocável e bytecode Java** – P1-Q6, PT-Q15 → **F** (confiança média, cerca de 70%)
 - A primeira parte é verdadeira: "Relocação estática viabiliza a construção de bibliotecas de código objeto" (7-1 s14, s23).
 - O **exemplo** é falso: bytecode Java não é código objeto relocável (código de máquina + lista de endereços relocáveis). É código intermediário de **máquina virtual**, e roda em qualquer computador por causa da **JVM**, não da relocação.
 - **Justificativa:** "Bytecode Java não é código objeto relocável; sua portabilidade vem da JVM, não da relocação."
-- Os três guias concordam em F. O aluno de P1 marcou V; você e o outro aluno da PT marcaram NS.
+- Os três guias concordam em F. O aluno de P1 marcou V; os dois alunos da PT marcaram NS.
 - Pegadinha: primeira metade verdadeira + exemplo errado = F.
 
 **(c) Carregador absoluto em memória volátil** – P1-Q7, PT-Q5 → **F**
@@ -202,7 +203,7 @@ Pontos por bloco (por prova): von Neumann ≈ 1,28 + 1,0; carregadores ≈ 1,28 
 
 **(b) Time sharing + "CPU intensiva" + partições** – P1-Q20, PT-Q11 → **F** (confiança alta)
 - **Justificativa:** "Em time sharing as transações são **interativas/E/S intensivas** (CPU intensivo é o batch), e a gerência real adequada é o **swapping** (time slice), não partições."
-- Sua justificativa na PT ("Sistema operacional do tipo batch") está certa no conteúdo, mas curta demais para garantir o ponto. Escreva a frase completa.
+- A justificativa da PT "EU" ("Sistema operacional do tipo batch") está certa no conteúdo, mas curta demais para garantir o ponto. Escreva a frase completa.
 
 **Real × virtual nos slides** (decore; é o que decide estes itens e a D4):
 
@@ -244,7 +245,7 @@ Pontos por bloco (por prova): von Neumann ≈ 1,28 + 1,0; carregadores ≈ 1,28 
 **(a) Round-robin** – P1-Q15 ("pois permite evitar **starvation**") → **V**; PT-Q20 ("pois permite evitar **deadlock**") → **F**
 - A diferença é do enunciado. **Round-robin evita starvation, não deadlock.**
 - **Justificativa (PT):** "Round-robin evita **starvation** (todos recebem time slice). Deadlock é espera circular por **recursos** e depende da política de alocação de recursos."
-- Sua justificativa ("Round-robin evita starvation") está boa. A do outro aluno ("não garante a justiça de atendimento") está **errada**: o round-robin é justamente o algoritmo justo.
+- A justificativa da PT "EU" ("Round-robin evita starvation") está boa. A do outro aluno ("não garante a justiça de atendimento") está **errada**: o round-robin é justamente o algoritmo justo.
 
 **(b) "Por isso um bom escalonador deve ser não preemptivo"** – P1-Q16, PT-Q19 → **F**
 - A primeira frase é do slide 8-1 s9. A conclusão é falsa.
@@ -299,7 +300,7 @@ Escreva em tópicos que espelhem o enunciado, um bloco por pedaço pontuado.
 
 **Consequência (vale citar):** é a localidade que faz funcionarem a **cache**, os buffers, o disk cache e a **paginação/LRU**, e por isso "a execução é rápida".
 
-Cobrado: separar definição de causa; citar temporal **e** espacial; dar causas concretas (não repetir os tipos como causa, que foi o seu erro).
+Cobrado: separar definição de causa; citar temporal **e** espacial; dar causas concretas (não repetir os tipos como causa, erro visto na PT "EU").
 
 ### 4.2 D2 – Tipos de carregadores (1,0): tipos (0,5), instante da relocação (0,25), o que carrega (0,25)
 
@@ -310,7 +311,7 @@ Cobrado: separar definição de causa; citar temporal **e** espacial; dar causas
 
 Para enriquecer (pontos extras): **linking loader/binder** (liga, reloca e carrega na carga, sem gerar arquivo; carrega módulos objeto); **ligação dinâmica/DLL** (reloca em tempo de **execução** ou de carga, via tabela *fixup*; carrega rotinas de biblioteca compartilhadas); compare com a relocação **dinâmica** por registrador de base/paginação, feita a **cada acesso** durante a execução.
 
-Cobrado: as **três** partes. Você perdeu o "instante"; o outro aluno perdeu o "o que carrega".
+Cobrado: as **três** partes. Na PT "EU" faltou o "instante"; na outra PT faltou o "o que carrega".
 
 ### 4.3 D3 – Mapeamento lógico → real em ambiente paginado, com exemplo (1,0)
 
@@ -332,7 +333,7 @@ Cobrado: as **três** partes. Você perdeu o "instante"; o outro aluno perdeu o 
 
 Endereço lógico **0x2ABC** → p = 2, d = 0xABC → entrada RegBase + 2 → r = 5 → endereço real = 5 ‖ ABC = **0x5ABC** (= 5 × 4096 + 2748 = 23228). Endereço 0x3010 → p = 3 ausente → **page fault**.
 
-Cobrado: o **exemplo** (obrigatório), a divisão (p, d), a tabela, a **concatenação** e o page fault. **Não confunda** com o registrador de base (8-2 s19: ER = EL + RegBase, esquema contíguo), que foi o seu erro.
+Cobrado: o **exemplo** (obrigatório), a divisão (p, d), a tabela, a **concatenação** e o page fault. **Não confunda** com o registrador de base (8-2 s19: ER = EL + RegBase, esquema contíguo), erro visto na PT "EU".
 
 ### 4.4 D4 – Projeto de S.O. (2,0): aplicação, carregamento, tipo, estrutura; política de processos (0,5), como evita deadlock (0,5) e starvation (0,5); gerência de memória real (0,5)
 
@@ -353,11 +354,11 @@ Questão aberta: vale a **coerência** entre as escolhas e responder **todos** o
 **Alternativa batch (se preferir):** batch, multiprogramado, contíguo, hierárquica; FCFS/SJF não preemptivo (maximiza o throughput); deadlock por pré-alocação declarada no JCL (aceitável em batch; reconheça que reduz o throughput); starvation: FCFS não tem, SJF exige aging; memória real: **partições** (fixas com fila por partição, ou variáveis com primeiro ajuste).
 
 **Armadilhas que custam ponto:**
-- "Liberar recursos quando não precisar mais" **não** evita deadlock (foi o seu erro).
-- "Escalonar por prioridade" **causa** starvation; só evita com aging (foi o seu erro).
+- "Liberar recursos quando não precisar mais" **não** evita deadlock (erro visto na PT "EU").
+- "Escalonar por prioridade" **causa** starvation; só evita com aging (erro visto na PT "EU").
 - Round-robin evita starvation, **não** deadlock.
 - Paginação/segmentação **não** são gerência de memória **real** nos slides.
-- Não esquecer a **estrutura** (você esqueceu).
+- Não esquecer a **estrutura** (esquecida na PT "EU").
 
 **Nota sobre os guias individuais:** o modelo A do guia 01 combina carregamento **não contíguo** com swapping (que na tabela de 8-2 s15 é contíguo). É defensável, mas menos coerente que o modelo acima. O guia 03 indicava paginação como "memória real", o que foi corrigido (ver seção 8).
 
@@ -375,9 +376,9 @@ Respostas montadas a partir dos slides, sem confirmação em prova; confiança m
 
 ---
 
-## 5. Seus pontos fracos (a partir da sua Prova-T 21/2)
+## 5. Erros comuns (a partir da Prova-T 21/2 "EU", de um colega)
 
-Estimativa da sua Parte 1: cerca de 5,8 a 6,2 de 7,0 (20 acertos, 1 erro, 1 NS se a Q6 valer; 19 acertos e 2 erros se não valer). As discursivas foram onde você mais perdeu.
+Estimativa da Parte 1 dessa prova: cerca de 5,8 a 6,2 de 7,0 (20 acertos, 1 erro, 1 NS se a Q6 valer; 19 acertos e 2 erros se não valer). As discursivas foram onde ela mais perdeu pontos.
 
 | # | O que aconteceu | Conceito correto | Revisar |
 |---|---|---|---|
@@ -390,7 +391,7 @@ Estimativa da sua Parte 1: cerca de 5,8 a 6,2 de 7,0 (20 acertos, 1 erro, 1 NS s
 | D3 | "Endereço real = lógico + RegBase", sem exemplo | Isso é o registrador de base. Paginação: (p, d) → RegBase + p → frame → **r ‖ d** + exemplo numérico | 4.3 (treine o exemplo à mão) |
 | D4 | Sem estrutura; "liberar recursos" para deadlock; "prioridade" para starvation | Estrutura hierárquica; ordenação de recursos (espera circular); round-robin + aging | 4.4 |
 
-**Hábitos a corrigir:**
+**Lições para a prova:**
 1. Transforme cada discursiva num checklist dos pedaços pontuados e responda cada um com subtítulo.
 2. Na D3, um exemplo numérico vale metade da questão: treine-o até sair de cabeça.
 3. Para marcar F, aponte uma afirmação **errada**, não algo que faltou (exceto lista definidora incompleta).
@@ -502,4 +503,4 @@ Estimativa da sua Parte 1: cerca de 5,8 a 6,2 de 7,0 (20 acertos, 1 erro, 1 NS s
 ### 8.3 Erros dos alunos (não dos guias) que vale lembrar
 - Aluno de P1: Q21 (segmentos) marcou F → é **V**; Q6 (bytecode) e Q10 (otimização) marcou V → provável **F**; extra "Escalonador" → **Interrupção**; justificativa da Q4 conceitualmente errada.
 - Outro aluno da PT: Q6 e Q12 marcou V → **F**; justificativa da Q17 ("deadlock") → é condição de corrida; justificativa da Q20 ("RR não é justo") → errada.
-- Você: ver seção 5.
+- PT "EU": ver seção 5.

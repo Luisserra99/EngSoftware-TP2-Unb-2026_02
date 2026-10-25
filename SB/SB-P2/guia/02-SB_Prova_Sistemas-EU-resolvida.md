@@ -9,7 +9,7 @@
 - **Resposta em branco conta como errada.** NS presumivelmente vale zero e não desconta.
 - **Todo item marcado F precisa de justificativa.**
 
-**Sobre as respostas do estudante:** a versão "EU" tem uma camada visível com as respostas do próprio estudante: a coluna V/F e a lista de justificativas em fonte Arial. Por baixo há um texto oculto, herdado do PDF original de outro aluno (`SB_Prova_Sistemas.pdf`). Considerei **somente o que aparece visualmente** na versão EU.
+**Sobre as respostas do estudante:** a versão "EU" tem uma camada visível com as respostas de um colega (aqui chamado de "o estudante"): a coluna V/F e a lista de justificativas em fonte Arial. Por baixo há um texto oculto, herdado do PDF original de outro aluno (`SB_Prova_Sistemas.pdf`). Considerei **somente o que aparece visualmente** na versão EU.
 
 **Assuntos cobertos:**
 1. Arquitetura de von Neumann: componentes, ciclo de busca e execução, gargalo, localidade de referência.
